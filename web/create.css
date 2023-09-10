@@ -1,0 +1,27 @@
+h3 {
+    text-align: center; 
+}
+
+.title{
+    font-size: 50px;
+    color: red;
+    font-weight: bold;
+    justify-content: center;
+    margin-right: 40%;
+}
+img{
+    width: 20%;
+    margin-bottom: auto;
+}
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.Box{
+    background-color: aqua;
+    color: black;
+    display: flex;
+    justify-content: center;
+
+}

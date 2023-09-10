@@ -1,0 +1,40 @@
+
+.navbar-center ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  background-color: orange;
+ justify-content: center;
+ 
+}
+
+.navbar-center li {
+  margin-right: 50px; /* Điều chỉnh khoảng cách giữa các mục */
+  color: black;
+  font-weight: bold;
+}
+.function-center{
+    display: flex;
+   justify-content: center;
+}
+.All{
+    background-color: aqua;
+}
+.table{
+     display: flex;
+   justify-content: center;
+}
+h1{
+    text-align: center;
+}
+.footer{
+    font-weight: bold;
+    background-color: aqua;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 17px;
+    margin-top: 25px;
+    color: black;
+}

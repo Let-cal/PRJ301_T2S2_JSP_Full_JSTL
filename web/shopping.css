@@ -1,0 +1,25 @@
+h1{
+    color: red;
+    background: aqua;
+    display: flex;
+    justify-content: center;
+    
+}
+.container {
+  display: flex; /* Xếp các ảnh trong cùng một hàng */
+  flex-wrap: wrap; /* Cho phép các ảnh xuống dòng nếu không đủ không gian */
+  justify-content: center;
+}
+
+.pic img {
+  flex: 1 1 100%; /* Tự điều chỉnh kích thước ảnh để phù hợp với không gian hiển thị */
+  max-width: 45%; /* Giới hạn kích thước tối đa của ảnh */
+  height: auto; /* Đảm bảo tỷ lệ khung hình đúng cho ảnh */
+  margin-top: 100px;
+}
+
+@media (min-width: 768px) {
+  .pic img {
+    flex-basis: 50%; /* Chia đều không gian ngang cho 2 ảnh trên màn hình rộng hơn 768px */
+  }
+}

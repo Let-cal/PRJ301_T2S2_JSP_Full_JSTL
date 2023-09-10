@@ -1,0 +1,41 @@
+.title{
+    font-size: 50px;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    margin-right: 38%;
+}
+img{
+    width: 20%;
+    margin-bottom: auto;
+}
+.row {
+  display: flex;
+  align-items: center;
+}
+.container {
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+.footer{
+    font-weight: bold;
+    background-color: aqua;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 17px;
+    margin-top: 25px;
+    color: black;
+}
+.box{
+    border: 5px solid black;
+    padding: 20px;
+}
+.text{
+    color: black;
+}
