@@ -19,15 +19,15 @@ import sample.shopping.Tea;
 
 /**
  *
- * @author wukon
+ * @author wukonadw
  */
 @WebServlet(name = "AddController", urlPatterns = {"/AddController"})
 public class AddController extends HttpServlet {
 
    private static final String ERROR="shopping.jsp";
    private static final String SUCCESS="shopping.jsp";
-   
-   
+  
+           
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
