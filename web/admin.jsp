@@ -57,7 +57,7 @@
                     <h3 class="text-center">Search User</h3>
                     <div class="row">
                         <div class="col-md-8">
-                            <input class="form-control mr-2 flex-grow-1" type="text" name="search" value="${param.search}" style="width: 100%;"/>
+                            <input class="form-control " type="text" name="search" value="${param.search}" style="width: 100%;"/>
                         </div>
                         <div class="col-md-2">
                             <input type="submit" name="action" value="Search" class="btn btn-primary btn-block"/>
