@@ -13,7 +13,10 @@
   color: black;
   font-weight: bold;
 }*/
-
+  .title {
+        margin-bottom: 20px; /* Điều chỉnh giá trị theo ý muốn của bạn */
+        display: inline-flex;
+    }
 .box{
     background-color: wheat;
     min-height: 10px;   

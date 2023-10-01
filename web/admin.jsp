@@ -9,16 +9,42 @@
         <link rel="stylesheet" href="admin.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     </head>
 
     <body>
+        
 
         <div class="All">
             <div class="container justify-content-center">
-                <div class="text-center text-danger">
-                    <h1>
-                        Welcome: ${sessionScope.LOGIN_USER.fullName}
-                    </h1> 
+                <div class="row title ">
+                    <div class="col-md-8 text-center text-danger">
+                        <h1 style=" font-family: Noto Sans; text-transform: uppercase;">
+                            Welcome: ${sessionScope.LOGIN_USER.fullName}
+                        </h1> 
+                    </div>
+                        
+                        <div class="col-md-4 function">
+                        <form action="MainController">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <input class="form-control " type="text" name="search" value="${param.search}" style="width: 100%;"/>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="input-group-append">
+                                        <button type="submit" name="action" value="Search" class="btn btn-primary">
+                                            <i class="fas fa-search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <input type="submit" name="action" value="Logout" class="btn btn-secondary btn-block"/>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                                    
+
                 </div>
 
                 <c:url var="logoutLink" value="MainController">
@@ -49,27 +75,6 @@
                     </div>
                 </ul>
             </div>
-
-
-
-            <div class="function-center">
-                <form action="MainController">
-                    <h3 class="text-center">Search User</h3>
-                    <div class="row">
-                        <div class="col-md-8">
-                            <input class="form-control " type="text" name="search" value="${param.search}" style="width: 100%;"/>
-                        </div>
-                        <div class="col-md-2">
-                            <input type="submit" name="action" value="Search" class="btn btn-primary btn-block"/>
-                        </div>
-                        <div class="col-md-2">
-                            <input type="submit" name="action" value="Logout" class="btn btn-secondary btn-block"/>
-                        </div>
-                    </div>
-                </form>
-            </div>
-
-
 
 
 
