@@ -12,7 +12,7 @@ public class DBUtils {
 
     private static final String DB = "UserManagement";
     private static final String USER_NAME = "sa";
-    private static final String PASSWORD = "12345";
+    private static final String PASSWORD = "REPLACE_WITH_DB_PASSWORD";
 
     public static Connection getConnection1() throws ClassNotFoundException, SQLException {
         Connection conn = null;
